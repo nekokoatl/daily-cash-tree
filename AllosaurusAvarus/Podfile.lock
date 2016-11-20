@@ -1,0 +1,26 @@
+PODS:
+  - BrickKit (0.9.3)
+  - Charts (3.0.0):
+    - Charts/Core (= 3.0.0)
+  - Charts/Core (3.0.0)
+  - FlickToDismiss (0.9)
+  - GTProgressBar (0.1.0)
+  - RAMAnimatedTabBarController (2.0.13)
+
+DEPENDENCIES:
+  - BrickKit
+  - Charts
+  - FlickToDismiss (~> 0.9)
+  - GTProgressBar
+  - RAMAnimatedTabBarController (~> 2.0.13)
+
+SPEC CHECKSUMS:
+  BrickKit: 0372efa6370b41bf7b47c67e4b60a06bae2c326b
+  Charts: beb341928d2135613b4325a6c6aff9f2f6de895e
+  FlickToDismiss: 264b9442aea04140ee8329bbf7714c908c183c1e
+  GTProgressBar: e72edfa42942aa8a19eaedc56b9a9d7ee9240123
+  RAMAnimatedTabBarController: 2510f3b66954c3f77ea1042a35d34df8f5f3b604
+
+PODFILE CHECKSUM: 2e317abe1df09e265f93672e778104da59a6c2e2
+
+COCOAPODS: 1.1.1
