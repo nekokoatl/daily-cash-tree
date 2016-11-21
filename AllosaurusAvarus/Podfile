@@ -7,8 +7,7 @@ target 'AllosaurusAvarus' do
 
   # Pods for AllosaurusAvarus
 pod 'RAMAnimatedTabBarController', "~> 2.0.13"
-pod 'FlickToDismiss', '~> 0.9'
+pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3'
 pod 'GTProgressBar'
-pod 'BrickKit'
 pod 'Charts'
 end

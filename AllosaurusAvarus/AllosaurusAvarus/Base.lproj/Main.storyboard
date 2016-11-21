@@ -42,9 +42,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" selectedImage="grafik" id="SOA-vT-vbP"/>
+                    <tabBarItem key="tabBarItem" title="" image="grafik" selectedImage="grafik" id="SOA-vT-vbP" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <connections>
+                            <outlet property="animation" destination="w0r-JR-u5T" id="4Xe-LH-UBY"/>
+                        </connections>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="w0r-JR-u5T" customClass="RAMRightRotationAnimation" customModule="RAMAnimatedTabBarController"/>
             </objects>
             <point key="canvasLocation" x="1132" y="265"/>
         </scene>
@@ -178,7 +183,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="m5u-M2-tHZ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TodayGoalsCell" id="m5u-M2-tHZ">
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="m5u-M2-tHZ" id="HFg-xz-1q3">
@@ -207,9 +212,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" selectedImage="today" id="DGC-lL-61S"/>
+                    <tabBarItem key="tabBarItem" title="" image="today" selectedImage="today" id="DGC-lL-61S" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <connections>
+                            <outlet property="animation" destination="aXy-3w-Jxa" id="qZZ-cS-wIm"/>
+                        </connections>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CbQ-CA-9Ak" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="aXy-3w-Jxa" customClass="RAMRightRotationAnimation" customModule="RAMAnimatedTabBarController"/>
             </objects>
             <point key="canvasLocation" x="789.375" y="-678.16901408450701"/>
         </scene>
@@ -229,7 +239,7 @@
                                 <rect key="frame" x="16" y="20" width="288" height="499"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="nvf-5v-U4w">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryMinusCell" id="nvf-5v-U4w">
                                         <rect key="frame" x="0.0" y="56" width="288" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nvf-5v-U4w" id="oPX-Sq-xaO">
@@ -260,7 +270,7 @@
                                             <color key="backgroundColor" red="0.6883601546" green="0.94006162879999999" blue="0.95162683729999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="YZe-Cy-Xne">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryPlusCell" id="YZe-Cy-Xne">
                                         <rect key="frame" x="0.0" y="100" width="288" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YZe-Cy-Xne" id="SaH-tH-sZU">
@@ -302,9 +312,14 @@
                             <constraint firstItem="OC2-Z6-g68" firstAttribute="top" secondItem="R2V-KE-3dx" secondAttribute="bottom" id="qt6-tb-a5p"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" selectedImage="history" id="LXM-Bt-NQJ"/>
+                    <tabBarItem key="tabBarItem" title="" image="history" selectedImage="history" id="LXM-Bt-NQJ" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <connections>
+                            <outlet property="animation" destination="4FP-t3-xiT" id="enI-dC-uqu"/>
+                        </connections>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iMc-fP-r9c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="4FP-t3-xiT" customClass="RAMRightRotationAnimation" customModule="RAMAnimatedTabBarController"/>
             </objects>
             <point key="canvasLocation" x="1799" y="-432"/>
         </scene>
@@ -323,8 +338,12 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Xvw-hl-6ci">
                                 <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <scrollView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ZhC-MY-BF9">
+                                    <rect key="frame" x="0.0" y="204" width="320" height="161"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </scrollView>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="csC-NC-f6r" style="IBUITableViewCellStyleDefault" id="S8u-fk-2dj">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingsCategoryHeaderCell" textLabel="csC-NC-f6r" style="IBUITableViewCellStyleDefault" id="S8u-fk-2dj">
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S8u-fk-2dj" id="wd5-Ew-T7z">
@@ -341,7 +360,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="tSo-UF-FG6">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingsGoalCell" id="tSo-UF-FG6">
                                         <rect key="frame" x="0.0" y="72" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tSo-UF-FG6" id="XyI-DR-D5h">
@@ -360,32 +379,12 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" image="edit"/>
-                                                    <connections>
-                                                        <segue destination="Ykw-yN-qsV" kind="presentation" id="RO1-41-PZP"/>
-                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="0OQ-eb-msE" style="IBUITableViewCellStyleDefault" id="GSy-xH-UVd">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingsIncomeCell" id="vBV-10-LEY">
                                         <rect key="frame" x="0.0" y="116" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GSy-xH-UVd" id="CPu-X2-Snx">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="money" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0OQ-eb-msE">
-                                                    <rect key="frame" x="15" y="0.0" width="290" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="vBV-10-LEY">
-                                        <rect key="frame" x="0.0" y="160" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vBV-10-LEY" id="FxJ-6e-O6Y">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -403,34 +402,12 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.92941176469999998" green="0.54901960780000003" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" image="edit"/>
-                                                    <connections>
-                                                        <segue destination="fhp-UT-iXS" kind="popoverPresentation" popoverAnchorView="aUx-Zu-sTb" id="DlO-Pt-DJJ">
-                                                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                                        </segue>
-                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="8sQ-o5-D6A">
-                                        <rect key="frame" x="0.0" y="204" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8sQ-o5-D6A" id="pWx-xi-1V6">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" fixedFrame="YES" text="поведение" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qd-Ny-MMM">
-                                                    <rect key="frame" x="0.0" y="0.0" width="290" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" id="F9d-YK-dNd">
-                                        <rect key="frame" x="0.0" y="248" width="320" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="SettingsBehaviorCell" id="F9d-YK-dNd">
+                                        <rect key="frame" x="0.0" y="160" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="F9d-YK-dNd" id="sT6-1I-w2D">
                                             <rect key="frame" x="0.0" y="0.0" width="281" height="43"/>
@@ -467,9 +444,19 @@
                             <constraint firstItem="Xvw-hl-6ci" firstAttribute="leading" secondItem="f8q-PV-vY4" secondAttribute="leading" id="mPq-0q-tyH"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" selectedImage="sett" id="a71-jk-hwV"/>
+                    <tabBarItem key="tabBarItem" title="" image="sett" selectedImage="sett" id="a71-jk-hwV" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="yOffSet">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="animation" destination="4fc-5f-kRs" id="Et8-XE-IHh"/>
+                        </connections>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ptk-L5-BA0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="4fc-5f-kRs" customClass="RAMRightRotationAnimation" customModule="RAMAnimatedTabBarController"/>
             </objects>
             <point key="canvasLocation" x="2030" y="368"/>
         </scene>
@@ -656,12 +643,13 @@
             </objects>
             <point key="canvasLocation" x="2729" y="143"/>
         </scene>
-        <!--Main Tab Bar-->
+        <!--Animated Tab Bar Controller-->
         <scene sceneID="1do-F1-PyJ">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="h79-aL-vCL" customClass="MainTabBar" customModule="AllosaurusAvarus" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="h79-aL-vCL" customClass="RAMAnimatedTabBarController" customModule="RAMAnimatedTabBarController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="rfY-rg-DRD">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
